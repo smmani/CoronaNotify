@@ -29,14 +29,14 @@ class RegionMonitor : UIResponder{
         let radius = [1000.0,1000.0,1000.0]
         
         for i in 0..<lati.count {
-                let geoFance  = RegionEvent()
-                geoFance.latitude = lati[i]
-                geoFance.longitude = long[i]
-                geoFance.radius = radius[i]
-                geoFance.note = Titlls[i]
-                //geoFance.msg = "\(radius[i])"
+                let event  = RegionEvent()
+                event.latitude = lati[i]
+                event.longitude = long[i]
+                event.radius = radius[i]
+                event.note = Titlls[i]
+                event.identifier = Titlls[i]
                 
-                self.registerGeoFence(obj: geoFance)
+                self.registerGeoFence(obj: event)
         }
         
     }
@@ -109,17 +109,28 @@ class RegionMonitor : UIResponder{
 
 extension RegionMonitor: CLLocationManagerDelegate {
     
+    func insertEventforRegion(region : CLCircularRegion, eventType : RegionEvent.EventType) {
+        let regionEvent = RegionEvent()
+        regionEvent.latitude = region.center.latitude
+        regionEvent.longitude = region.center.longitude
+        regionEvent.identifier = region.identifier
+        regionEvent.radius = region.radius
+        regionEvent.eventType = eventType
+        regionEvent.eventTime = Utils.getCurrentTimeString()
+        CoreDataManager.shared.insertEventLog(event: regionEvent)
+    }
+    
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
             if region is CLCircularRegion {
-            
-            print("Did Enter region called....")
-            
+                print("Did Enter region called....")
+                insertEventforRegion(region: region as! CLCircularRegion, eventType: .onEntry)
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         if region is CLCircularRegion {
-             print("Did Exit region called....")
+            print("Did Exit region called....")
+            insertEventforRegion(region: region as! CLCircularRegion, eventType: .onExit)
         }
     }
 }

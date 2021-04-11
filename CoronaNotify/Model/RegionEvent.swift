@@ -22,6 +22,7 @@ class RegionEvent{
     var identifier: String = ""
     var note: String = ""
     var eventType: EventType = .onEntry
+    var eventTime : String = ""
 
     var title: String? {
       if note.isEmpty {
@@ -31,6 +32,16 @@ class RegionEvent{
     }
     
     init() {
+    }
+    
+    init(from eventLog : RegionLog) {
+        latitude = eventLog.latitude
+        longitude = eventLog.longitude
+        radius = eventLog.radius
+        identifier = eventLog.identifier ?? ""
+        note = eventLog.note ?? ""
+        eventType = EventType.init(rawValue: eventLog.eventType ?? "On Entry") ?? .onEntry
+        eventTime = eventLog.logTime ?? ""
     }
 }
 

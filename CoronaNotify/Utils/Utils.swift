@@ -12,7 +12,12 @@ import UIKit
 
 class Utils {
     
-    
+    class func getCurrentTimeString() -> String{
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = Date()
+        return dateFormatter.string(from: date)
+    }
     
 }
 

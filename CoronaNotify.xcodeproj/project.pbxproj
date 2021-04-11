@@ -11,7 +11,7 @@
 		1D2B3109262198E0002D482B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B3108262198E0002D482B /* SceneDelegate.swift */; };
 		1D2B310B262198E0002D482B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B310A262198E0002D482B /* ViewController.swift */; };
 		1D2B310E262198E0002D482B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B310C262198E0002D482B /* Main.storyboard */; };
-		1D2B3111262198E0002D482B /* KFCNotify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B310F262198E0002D482B /* KFCNotify.xcdatamodeld */; };
+		1D2B3111262198E0002D482B /* CoronaNotify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B310F262198E0002D482B /* CoronaNotify.xcdatamodeld */; };
 		1D2B3113262198E2002D482B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B3112262198E2002D482B /* Assets.xcassets */; };
 		1D2B3116262198E2002D482B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B3114262198E2002D482B /* LaunchScreen.storyboard */; };
 		1D2B3121262198E2002D482B /* KFCNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B3120262198E2002D482B /* KFCNotifyTests.swift */; };
@@ -19,6 +19,8 @@
 		1D2B313B2621994F002D482B /* RegionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B313A2621994F002D482B /* RegionMonitor.swift */; };
 		1D2B313E26219CF8002D482B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B313D26219CF8002D482B /* CoreDataManager.swift */; };
 		1D2B314126219EA1002D482B /* RegionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B314026219EA1002D482B /* RegionEvent.swift */; };
+		1D63A54D26233CD100BD1E22 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63A54C26233CD100BD1E22 /* HomeViewModel.swift */; };
+		1D63A5502623412D00BD1E22 /* RegionLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63A54F2623412D00BD1E22 /* RegionLogCell.swift */; };
 		1D7BD97D2622FACD00A55393 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BD97C2622FACD00A55393 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		1D2B313A2621994F002D482B /* RegionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionMonitor.swift; sourceTree = "<group>"; };
 		1D2B313D26219CF8002D482B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1D2B314026219EA1002D482B /* RegionEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionEvent.swift; sourceTree = "<group>"; };
+		1D63A54C26233CD100BD1E22 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1D63A54F2623412D00BD1E22 /* RegionLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegionLogCell.swift; path = TableCells/RegionLogCell.swift; sourceTree = "<group>"; };
 		1D7BD97C2622FACD00A55393 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1D7BD988262316E200A55393 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = SimulatedLocations.gpx; path = CoronaNotify/SimulatedLocations.gpx; sourceTree = "<group>"; };
 		1D7BD989262316F600A55393 /* Forum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Forum.gpx; path = CoronaNotify/Forum.gpx; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		1D2B3105262198E0002D482B /* CoronaNotify */ = {
 			isa = PBXGroup;
 			children = (
+				1D63A54E262340D100BD1E22 /* Views */,
+				1D63A54B26233C3100BD1E22 /* ViewModel */,
 				1D7BD97B2622FAB700A55393 /* Utils */,
 				1D2B313F26219E8E002D482B /* Model */,
 				1D2B313C26219CDA002D482B /* CoreDataManager */,
@@ -128,7 +134,7 @@
 				1D2B3112262198E2002D482B /* Assets.xcassets */,
 				1D2B3114262198E2002D482B /* LaunchScreen.storyboard */,
 				1D2B3117262198E2002D482B /* Info.plist */,
-				1D2B310F262198E0002D482B /* KFCNotify.xcdatamodeld */,
+				1D2B310F262198E0002D482B /* CoronaNotify.xcdatamodeld */,
 			);
 			path = CoronaNotify;
 			sourceTree = "<group>";
@@ -173,6 +179,22 @@
 				1D2B314026219EA1002D482B /* RegionEvent.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1D63A54B26233C3100BD1E22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D63A54C26233CD100BD1E22 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D63A54E262340D100BD1E22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D63A54F2623412D00BD1E22 /* RegionLogCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1D7BD97B2622FAB700A55393 /* Utils */ = {
@@ -315,11 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D2B313E26219CF8002D482B /* CoreDataManager.swift in Sources */,
+				1D63A54D26233CD100BD1E22 /* HomeViewModel.swift in Sources */,
+				1D63A5502623412D00BD1E22 /* RegionLogCell.swift in Sources */,
 				1D2B310B262198E0002D482B /* ViewController.swift in Sources */,
 				1D2B314126219EA1002D482B /* RegionEvent.swift in Sources */,
 				1D2B3107262198E0002D482B /* AppDelegate.swift in Sources */,
 				1D2B3109262198E0002D482B /* SceneDelegate.swift in Sources */,
-				1D2B3111262198E0002D482B /* KFCNotify.xcdatamodeld in Sources */,
+				1D2B3111262198E0002D482B /* CoronaNotify.xcdatamodeld in Sources */,
 				1D2B313B2621994F002D482B /* RegionMonitor.swift in Sources */,
 				1D7BD97D2622FACD00A55393 /* Utils.swift in Sources */,
 			);
@@ -646,13 +670,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1D2B310F262198E0002D482B /* KFCNotify.xcdatamodeld */ = {
+		1D2B310F262198E0002D482B /* CoronaNotify.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				1D2B3110262198E0002D482B /* KFCNotify.xcdatamodel */,
 			);
 			currentVersion = 1D2B3110262198E0002D482B /* KFCNotify.xcdatamodel */;
-			path = KFCNotify.xcdatamodeld;
+			path = CoronaNotify.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
