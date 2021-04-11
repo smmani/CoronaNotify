@@ -16,6 +16,10 @@
 		1D2B3116262198E2002D482B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B3114262198E2002D482B /* LaunchScreen.storyboard */; };
 		1D2B3121262198E2002D482B /* KFCNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B3120262198E2002D482B /* KFCNotifyTests.swift */; };
 		1D2B312C262198E2002D482B /* KFCNotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B312B262198E2002D482B /* KFCNotifyUITests.swift */; };
+		1D2B313B2621994F002D482B /* RegionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B313A2621994F002D482B /* RegionMonitor.swift */; };
+		1D2B313E26219CF8002D482B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B313D26219CF8002D482B /* CoreDataManager.swift */; };
+		1D2B314126219EA1002D482B /* RegionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B314026219EA1002D482B /* RegionEvent.swift */; };
+		1D7BD97D2622FACD00A55393 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BD97C2622FACD00A55393 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D2B3103262198E0002D482B /* KFCNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFCNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2B3103262198E0002D482B /* CoronaNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2B3106262198E0002D482B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2B3108262198E0002D482B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1D2B310A262198E0002D482B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +49,20 @@
 		1D2B3112262198E2002D482B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D2B3115262198E2002D482B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D2B3117262198E2002D482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D2B311C262198E2002D482B /* KFCNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFCNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2B311C262198E2002D482B /* CoronaNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2B3120262198E2002D482B /* KFCNotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFCNotifyTests.swift; sourceTree = "<group>"; };
 		1D2B3122262198E2002D482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D2B3127262198E2002D482B /* KFCNotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFCNotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2B3127262198E2002D482B /* CoronaNotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaNotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2B312B262198E2002D482B /* KFCNotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFCNotifyUITests.swift; sourceTree = "<group>"; };
 		1D2B312D262198E2002D482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D2B313A2621994F002D482B /* RegionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionMonitor.swift; sourceTree = "<group>"; };
+		1D2B313D26219CF8002D482B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1D2B314026219EA1002D482B /* RegionEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionEvent.swift; sourceTree = "<group>"; };
+		1D7BD97C2622FACD00A55393 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1D7BD988262316E200A55393 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = SimulatedLocations.gpx; path = CoronaNotify/SimulatedLocations.gpx; sourceTree = "<group>"; };
+		1D7BD989262316F600A55393 /* Forum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Forum.gpx; path = CoronaNotify/Forum.gpx; sourceTree = "<group>"; };
+		1D7BD98A262316F700A55393 /* Mayajal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Mayajal.gpx; path = CoronaNotify/Mayajal.gpx; sourceTree = "<group>"; };
+		1D7BD98B262316F700A55393 /* Phoenix.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Phoenix.gpx; path = CoronaNotify/Phoenix.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +93,11 @@
 		1D2B30FA262198E0002D482B = {
 			isa = PBXGroup;
 			children = (
-				1D2B3105262198E0002D482B /* KFCNotify */,
+				1D7BD989262316F600A55393 /* Forum.gpx */,
+				1D7BD98A262316F700A55393 /* Mayajal.gpx */,
+				1D7BD98B262316F700A55393 /* Phoenix.gpx */,
+				1D7BD988262316E200A55393 /* SimulatedLocations.gpx */,
+				1D2B3105262198E0002D482B /* CoronaNotify */,
 				1D2B311F262198E2002D482B /* KFCNotifyTests */,
 				1D2B312A262198E2002D482B /* KFCNotifyUITests */,
 				1D2B3104262198E0002D482B /* Products */,
@@ -91,16 +107,20 @@
 		1D2B3104262198E0002D482B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D2B3103262198E0002D482B /* KFCNotify.app */,
-				1D2B311C262198E2002D482B /* KFCNotifyTests.xctest */,
-				1D2B3127262198E2002D482B /* KFCNotifyUITests.xctest */,
+				1D2B3103262198E0002D482B /* CoronaNotify.app */,
+				1D2B311C262198E2002D482B /* CoronaNotifyTests.xctest */,
+				1D2B3127262198E2002D482B /* CoronaNotifyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1D2B3105262198E0002D482B /* KFCNotify */ = {
+		1D2B3105262198E0002D482B /* CoronaNotify */ = {
 			isa = PBXGroup;
 			children = (
+				1D7BD97B2622FAB700A55393 /* Utils */,
+				1D2B313F26219E8E002D482B /* Model */,
+				1D2B313C26219CDA002D482B /* CoreDataManager */,
+				1D2B313926219935002D482B /* RegionMonitor */,
 				1D2B3106262198E0002D482B /* AppDelegate.swift */,
 				1D2B3108262198E0002D482B /* SceneDelegate.swift */,
 				1D2B310A262198E0002D482B /* ViewController.swift */,
@@ -110,7 +130,7 @@
 				1D2B3117262198E2002D482B /* Info.plist */,
 				1D2B310F262198E0002D482B /* KFCNotify.xcdatamodeld */,
 			);
-			path = KFCNotify;
+			path = CoronaNotify;
 			sourceTree = "<group>";
 		};
 		1D2B311F262198E2002D482B /* KFCNotifyTests */ = {
@@ -131,12 +151,44 @@
 			path = KFCNotifyUITests;
 			sourceTree = "<group>";
 		};
+		1D2B313926219935002D482B /* RegionMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				1D2B313A2621994F002D482B /* RegionMonitor.swift */,
+			);
+			path = RegionMonitor;
+			sourceTree = "<group>";
+		};
+		1D2B313C26219CDA002D482B /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1D2B313D26219CF8002D482B /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		1D2B313F26219E8E002D482B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D2B314026219EA1002D482B /* RegionEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D7BD97B2622FAB700A55393 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BD97C2622FACD00A55393 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D2B3102262198E0002D482B /* KFCNotify */ = {
+		1D2B3102262198E0002D482B /* CoronaNotify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D2B3130262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotify" */;
+			buildConfigurationList = 1D2B3130262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotify" */;
 			buildPhases = (
 				1D2B30FF262198E0002D482B /* Sources */,
 				1D2B3100262198E0002D482B /* Frameworks */,
@@ -146,14 +198,14 @@
 			);
 			dependencies = (
 			);
-			name = KFCNotify;
+			name = CoronaNotify;
 			productName = KFCNotify;
-			productReference = 1D2B3103262198E0002D482B /* KFCNotify.app */;
+			productReference = 1D2B3103262198E0002D482B /* CoronaNotify.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1D2B311B262198E2002D482B /* KFCNotifyTests */ = {
+		1D2B311B262198E2002D482B /* CoronaNotifyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D2B3133262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotifyTests" */;
+			buildConfigurationList = 1D2B3133262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotifyTests" */;
 			buildPhases = (
 				1D2B3118262198E2002D482B /* Sources */,
 				1D2B3119262198E2002D482B /* Frameworks */,
@@ -164,14 +216,14 @@
 			dependencies = (
 				1D2B311E262198E2002D482B /* PBXTargetDependency */,
 			);
-			name = KFCNotifyTests;
+			name = CoronaNotifyTests;
 			productName = KFCNotifyTests;
-			productReference = 1D2B311C262198E2002D482B /* KFCNotifyTests.xctest */;
+			productReference = 1D2B311C262198E2002D482B /* CoronaNotifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1D2B3126262198E2002D482B /* KFCNotifyUITests */ = {
+		1D2B3126262198E2002D482B /* CoronaNotifyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D2B3136262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotifyUITests" */;
+			buildConfigurationList = 1D2B3136262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotifyUITests" */;
 			buildPhases = (
 				1D2B3123262198E2002D482B /* Sources */,
 				1D2B3124262198E2002D482B /* Frameworks */,
@@ -182,9 +234,9 @@
 			dependencies = (
 				1D2B3129262198E2002D482B /* PBXTargetDependency */,
 			);
-			name = KFCNotifyUITests;
+			name = CoronaNotifyUITests;
 			productName = KFCNotifyUITests;
-			productReference = 1D2B3127262198E2002D482B /* KFCNotifyUITests.xctest */;
+			productReference = 1D2B3127262198E2002D482B /* CoronaNotifyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D2B30FE262198E0002D482B /* Build configuration list for PBXProject "KFCNotify" */;
+			buildConfigurationList = 1D2B30FE262198E0002D482B /* Build configuration list for PBXProject "CoronaNotify" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +275,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D2B3102262198E0002D482B /* KFCNotify */,
-				1D2B311B262198E2002D482B /* KFCNotifyTests */,
-				1D2B3126262198E2002D482B /* KFCNotifyUITests */,
+				1D2B3102262198E0002D482B /* CoronaNotify */,
+				1D2B311B262198E2002D482B /* CoronaNotifyTests */,
+				1D2B3126262198E2002D482B /* CoronaNotifyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,10 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2B313E26219CF8002D482B /* CoreDataManager.swift in Sources */,
 				1D2B310B262198E0002D482B /* ViewController.swift in Sources */,
+				1D2B314126219EA1002D482B /* RegionEvent.swift in Sources */,
 				1D2B3107262198E0002D482B /* AppDelegate.swift in Sources */,
 				1D2B3109262198E0002D482B /* SceneDelegate.swift in Sources */,
 				1D2B3111262198E0002D482B /* KFCNotify.xcdatamodeld in Sources */,
+				1D2B313B2621994F002D482B /* RegionMonitor.swift in Sources */,
+				1D7BD97D2622FACD00A55393 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +346,12 @@
 /* Begin PBXTargetDependency section */
 		1D2B311E262198E2002D482B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D2B3102262198E0002D482B /* KFCNotify */;
+			target = 1D2B3102262198E0002D482B /* CoronaNotify */;
 			targetProxy = 1D2B311D262198E2002D482B /* PBXContainerItemProxy */;
 		};
 		1D2B3129262198E2002D482B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D2B3102262198E0002D482B /* KFCNotify */;
+			target = 1D2B3102262198E0002D482B /* CoronaNotify */;
 			targetProxy = 1D2B3128262198E2002D482B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,7 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KFCNotify/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoronaNotify/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mani.KFCNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,7 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KFCNotify/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoronaNotify/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mani.KFCNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -485,7 +541,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFCNotify.app/KFCNotify";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoronaNotify.app/CoronaNotify";
 			};
 			name = Debug;
 		};
@@ -506,7 +562,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFCNotify.app/KFCNotify";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoronaNotify.app/CoronaNotify";
 			};
 			name = Release;
 		};
@@ -551,7 +607,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D2B30FE262198E0002D482B /* Build configuration list for PBXProject "KFCNotify" */ = {
+		1D2B30FE262198E0002D482B /* Build configuration list for PBXProject "CoronaNotify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D2B312E262198E2002D482B /* Debug */,
@@ -560,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D2B3130262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotify" */ = {
+		1D2B3130262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D2B3131262198E2002D482B /* Debug */,
@@ -569,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D2B3133262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotifyTests" */ = {
+		1D2B3133262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotifyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D2B3134262198E2002D482B /* Debug */,
@@ -578,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D2B3136262198E2002D482B /* Build configuration list for PBXNativeTarget "KFCNotifyUITests" */ = {
+		1D2B3136262198E2002D482B /* Build configuration list for PBXNativeTarget "CoronaNotifyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D2B3137262198E2002D482B /* Debug */,

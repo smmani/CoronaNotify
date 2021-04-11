@@ -2,7 +2,7 @@
 //  KFCNotifyUITests.swift
 //  KFCNotifyUITests
 //
-//  Created by Selvakumar Murugan on 10/04/21.
+//  Created by Mani on 10/04/21.
 //  Copyright © 2021 Mani. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  KFCNotify
 //
-//  Created by Selvakumar Murugan on 10/04/21.
+//  Created by Mani on 10/04/21.
 //  Copyright © 2021 Mani. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
