@@ -12,6 +12,8 @@ import UIKit
 
 class RegionMonitor : UIResponder{
     
+    static let onEntryOrExit = "EntryOrExitRegion"
+    
     static let shared = RegionMonitor()
     let locationManager = CLLocationManager()
     
@@ -118,6 +120,7 @@ extension RegionMonitor: CLLocationManagerDelegate {
         regionEvent.eventType = eventType
         regionEvent.eventTime = Utils.getCurrentTimeString()
         CoreDataManager.shared.insertEventLog(event: regionEvent)
+        NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: RegionMonitor.onEntryOrExit)))
     }
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {

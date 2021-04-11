@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         self.viewModel.uiRefreshBlock = {[unowned self] in
             self.reloadTableview()
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshData), name: Notification.Name(rawValue: RegionMonitor.onEntryOrExit), object: nil)
+    }
+    
+    @objc func refreshData() {
+        self.viewModel.fetchAllEvents()
     }
     
     func reloadTableview() {
@@ -40,6 +45,7 @@ class ViewController: UIViewController {
 
 }
 
+
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.allEvents.count
@@ -49,7 +55,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RegionLogCell", for: indexPath) as!  RegionLogCell
         let logEvent = self.viewModel.allEvents[indexPath.row]
         cell.eventTimeLbl.text = logEvent.eventTime
-        cell.eventDescription.text = "You have " + (logEvent.eventType == RegionEvent.EventType.onEntry ? "Entered into Coronoa zone." : "Left Corona zone.")
+        cell.eventDescription.text = "You have " + (logEvent.eventType == RegionEvent.EventType.onEntry ? "Entered into Coronoa zone" : "crossed Corona zone") + " at \(logEvent.identifier)."
         return cell
     }
     
